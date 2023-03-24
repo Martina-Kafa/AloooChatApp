@@ -96,6 +96,16 @@ body {
     margin-bottom: 5px;
   }
   
+ @media (max-width: 300px) {
+  body {
+     min-width: 300px;
+  } 
+ }
+ @media (max-width: 773px) {
+  body {
+    min-width: 300px;
+  }
+ }
   
 
 
