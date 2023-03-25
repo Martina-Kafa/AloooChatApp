@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 40%;
+    height: 100vh;
+    background-image: url(./images/flat-jungle-background/5468688.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+  .members-count {
+    text-align: center;
+    color: antiquewhite; 
+  }
+
+  .members-list {
+    text-align: center;
+    border: 3px solid #272637;
+    background-color: rgb(235, 243, 233, 0.6);
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .messages {
+    border: 3px solid #272637;
+    height: 100vh;
+    flex-shrink: 1;
+    overflow: auto;
+    text-align: left;
+    background-color: rgb(235, 243, 233, 0.6);
+    border-radius: 10%;
+  }
+
+  .members-count,
+  .members-list,
+  .messages {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .message {
+    padding: 8px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    width: fit-content;
+    color: antiquewhite;
+  }
+
+  .message .member {
+    display: inline-block;
+  } 
+
+  .member {
+    padding-right: 10px;
+    position: relative;
+  }
+
+  .message-form {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .message-form__input {
+    flex-grow: 1;
+    background-color: rgb(235, 243, 233, 0.6);
+    border: 3px solid #272637;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .message-form__button {
+    margin: 5px;
+    background-color: rgb(235, 243, 233, 0.6);
+    border: 3px solid #272637;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: large;
+    color:antiquewhite
+  }
+  
+  .message--mine {
+    text-align: right;
+    background-color: rgb(66, 154, 131);
+    margin-left: auto;   
+  }
+  
+  .message--theirs {
+    text-align: left;
+    background-color: rgb(63, 132, 108);
+    margin-right: auto; 
+  }
+  
+  .member-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 1025px) {
+  body {
+     min-width: 300px;
+  }
+  .members-list {
+    width: auto;
+  }
+ }
+
+  
+  
+  
+  
